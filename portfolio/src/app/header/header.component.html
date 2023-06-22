@@ -1,0 +1,155 @@
+<style>
+    body{
+        margin-top: 0;
+        margin-bottom: 0;
+      background-color: #222222;
+        height: 100%;
+        width: 100vh;
+    }
+    .home{
+        background-color: #222222;
+      
+    }
+    #lcorner{
+        display: flex;
+        border: 2px solid #007CED;
+        border-radius: 50px;
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        left: 30px;
+        top: 20px;
+        background: #007CED;
+        align-items: center;
+        justify-content: center;
+    }
+    #d{
+        font-family: 'Ribeye';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 35px;
+        color: rgb(245, 0, 0);
+    }
+    #port{
+        position: absolute;
+        width: 100px;
+        height: 200px;
+        left: 100px;
+        top: 35px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 35px;
+        color: #ffffff;
+    }
+    .buttons{
+     
+        display: flex;
+        gap:50;
+        position: absolute;
+        left: 700px;
+        top: 25px;
+    }
+    #home {
+        text-decoration: none;
+        height: 2.5rem;
+        width: 4.5rem;
+        margin-right: 1rem;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        cursor: pointer;
+        font-size: 18px;
+        line-height: 35px;
+        /* or 194% */
+        color: rgba(255, 255, 255, 0.5);
+    }
+    #home.active{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight:600;
+        font-size: 18px;
+        color: #ffffff;
+      
+    }
+    #frontend {
+        text-decoration: none;
+        height: 2.5rem;
+        width: 9rem;
+        margin-right: 1rem;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        cursor: pointer;
+        font-size: 18px;
+        line-height: 35px;
+        /* or 194% */
+        color: rgba(255, 255, 255, 0.5);
+    }
+    #frontend.active{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight:600;
+        font-size: 18px;
+        color: #ffffff;
+    }
+    #backend {
+        text-decoration: none;
+        height: 2.5rem;
+        width: 8rem;
+        margin-right: 1rem;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        cursor: pointer;
+        font-size: 18px;
+        line-height: 35px;
+        /* or 194% */
+        color: rgba(255, 255, 255, 0.5);
+    }
+    #backend.active{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight:600;
+        font-size: 18px;
+        color: #ffffff;
+    }
+    #contact {
+        text-decoration: none;
+        height: 2.5rem;
+        width: 4.5rem;
+        margin-right: 1rem;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        cursor: pointer;
+        font-size: 18px;
+        line-height: 35px;
+        /* or 194% */
+        color: rgba(255, 255, 255, 0.5);
+    }
+    #contact.active{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight:600;
+        font-size: 18px;
+        color: #ffffff;
+    }
+</style>
+<body>
+    <div class="home">
+        <div id="lcorner">
+            <p id="d">D's</p>
+        </div>
+            <p id="port">Portfolio</p>
+        <div class="buttons">
+           
+            <a routerLink="/home" routerLinkActive="active" id="home">Home</a>
+            <a routerLink="/frontend" routerLinkActive="active" id="frontend">Front-end skills</a>
+            <a routerLink="/backend" routerLinkActive="active" id="backend">Back-end skills</a>
+            <a routerLink="/contact" routerLinkActive="active" id="contact">Contact</a>
+        </div>
+    </div> 
+</body>
