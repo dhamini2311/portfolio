@@ -1,155 +1,174 @@
 <style>
-    body{
+    body {
         margin-top: 0;
-        margin-bottom: 0;
-      background-color: #222222;
-        height: 100%;
-        width: 100vh;
+        margin-left: 0;
+
     }
-    .home{
+
+    .nav {
+        display: grid;
+        height: 5.5rem;
+        width: 100%;
         background-color: #222222;
-      
+
     }
-    #lcorner{
+
+    #circle {
         display: flex;
         border: 2px solid #007CED;
         border-radius: 50px;
         position: absolute;
         width: 60px;
         height: 60px;
-        left: 30px;
+        left: 29px;
         top: 20px;
         background: #007CED;
         align-items: center;
         justify-content: center;
     }
-    #d{
+
+    #h {
         font-family: 'Ribeye';
         font-style: normal;
         font-weight: 400;
-        font-size: 35px;
+        font-size: 28px;
         line-height: 35px;
-        color: rgb(245, 0, 0);
+        /* or 100% */
+        color: #FFFFFF;
     }
-    #port{
+
+    .buttons {
+        display: flex;
         position: absolute;
-        width: 100px;
-        height: 200px;
-        left: 100px;
-        top: 35px;
+        top: 1.7rem;
+        left: 58rem;
+    }
+
+    #home {
+        height: 2.5rem;
+        width: 4.5rem;
+        margin-right: 20px;
+        margin-left:-180px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        cursor: pointer;
+        font-size: 18px;
+        line-height: 35px;
+        text-decoration: none;
+        /* or 194% */
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    #home.active {
+        font-family: 'Poppins';
+        font-style: normal;
+        color: #FFFFFF;
+        font-weight: 700;
+    }
+
+    #frnt {
+        margin-right: 3.5rem;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 35px;
+        cursor: pointer;
+        width:150px;
+        margin-left:-15px;
+        text-decoration: none;
+        /* or 194% */
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    #frnt.active {
+        font-family: 'Poppins';
+        font-style: normal;
+        color: #FFFFFF;
+        font-weight: 700;
+    }
+
+    #back {
+        margin-right: 3.5rem;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 35px;
+        cursor: pointer;
+        width:150px;
+        text-decoration: none;
+        margin-left: -65px;
+        /* or 194% */
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    #back.active {
+        font-family: 'Poppins';
+        font-style: normal;
+        color: #FFFFFF;
+        font-weight: 700;
+    }
+
+    #cnt {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 35px;
+        cursor: pointer;
+        margin-left: -60px;
+        text-decoration: none;
+
+        /* or 194% */
+
+
+        color: rgba(255, 255, 255, 0.5);
+
+    }
+
+    #cnt.active {
+        font-family: 'Poppins';
+        font-style: normal;
+        color: #FFFFFF;
+        font-weight: 700;
+    }
+
+    #port {
+        position: absolute;
+        width: 197px;
+        height: 45px;
+        left: 65px;
+        top: 13px;
+
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 700;
         font-size: 30px;
         line-height: 35px;
-        color: #ffffff;
-    }
-    .buttons{
-     
-        display: flex;
-        gap:50;
-        position: absolute;
-        left: 700px;
-        top: 25px;
-    }
-    #home {
-        text-decoration: none;
-        height: 2.5rem;
-        width: 4.5rem;
-        margin-right: 1rem;
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 400;
-        cursor: pointer;
-        font-size: 18px;
-        line-height: 35px;
-        /* or 194% */
-        color: rgba(255, 255, 255, 0.5);
-    }
-    #home.active{
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight:600;
-        font-size: 18px;
-        color: #ffffff;
-      
-    }
-    #frontend {
-        text-decoration: none;
-        height: 2.5rem;
-        width: 9rem;
-        margin-right: 1rem;
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 400;
-        cursor: pointer;
-        font-size: 18px;
-        line-height: 35px;
-        /* or 194% */
-        color: rgba(255, 255, 255, 0.5);
-    }
-    #frontend.active{
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight:600;
-        font-size: 18px;
-        color: #ffffff;
-    }
-    #backend {
-        text-decoration: none;
-        height: 2.5rem;
-        width: 8rem;
-        margin-right: 1rem;
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 400;
-        cursor: pointer;
-        font-size: 18px;
-        line-height: 35px;
-        /* or 194% */
-        color: rgba(255, 255, 255, 0.5);
-    }
-    #backend.active{
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight:600;
-        font-size: 18px;
-        color: #ffffff;
-    }
-    #contact {
-        text-decoration: none;
-        height: 2.5rem;
-        width: 4.5rem;
-        margin-right: 1rem;
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 400;
-        cursor: pointer;
-        font-size: 18px;
-        line-height: 35px;
-        /* or 194% */
-        color: rgba(255, 255, 255, 0.5);
-    }
-    #contact.active{
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight:600;
-        font-size: 18px;
-        color: #ffffff;
+        /* or 117% */
+
+
+        color: #FFFFFF;
     }
 </style>
+
 <body>
-    <div class="home">
-        <div id="lcorner">
-            <p id="d">D's</p>
+    <nav class="nav">
+
+
+        <div id="circle">
+            <p id="h">D's</p>
+            <span id="port">Portfolio</span>
         </div>
-            <p id="port">Portfolio</p>
         <div class="buttons">
-           
             <a routerLink="/home" routerLinkActive="active" id="home">Home</a>
-            <a routerLink="/frontend" routerLinkActive="active" id="frontend">Front-end skills</a>
-            <a routerLink="/backend" routerLinkActive="active" id="backend">Back-end skills</a>
-            <a routerLink="/contact" routerLinkActive="active" id="contact">Contact</a>
+            <a routerLink="/frontend" routerLinkActive="active" id="frnt">Front-end skills</a>
+            <a routerLink="/backend" routerLinkActive="active" id="back">Back-end skills</a>
+            <a routerLink="/contact" routerLinkActive="active" id="cnt">Contact</a>
         </div>
-    </div> 
+
+    </nav>
+
 </body>

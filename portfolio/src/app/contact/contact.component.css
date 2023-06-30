@@ -1,0 +1,126 @@
+#contact{
+width: 100px;
+height: 100px;
+flex-shrink: 0;
+display: flex;
+width: 453px;
+height: 45px;
+flex-direction: column;
+flex-shrink: 0;
+color: #FFF;
+font-size: 55px;
+font-family: Poppins;
+font-style: normal;
+font-weight: 700;
+line-height: 35px;
+margin-left: 80px;
+}
+#phno{
+    display: flex;
+width: 150px;
+height: 25px;
+flex-direction: column;
+flex-shrink: 0;
+color: #FFF;
+font-size: 20px;
+font-family: Poppins;
+font-style: normal;
+font-weight: 700;
+line-height: 20px;
+margin-left:25rem;
+margin-top:2rem;
+}
+#ph{
+    height: 30px;
+    width: 30px;
+    margin-top: -30px;
+    margin-left: 20rem;
+    line-height: 20px;    
+}
+#cont1{
+    display: flex;
+width: 412px;
+height: 45px;
+flex-direction: column;
+flex-shrink: 0;
+color: rgba(255, 255, 255, 0.70);
+font-size: 18px;
+font-family: Poppins;
+font-style: normal;
+font-weight: 400;
+line-height: 20px;
+margin-left:25rem;
+margin-top:1px;
+}
+#add{
+    display: flex;
+width: 286px;
+height: 45px;
+flex-direction: column;
+flex-shrink: 0;
+color: #FFF;
+font-size: 20px;
+font-family: Poppins;
+font-style: normal;
+font-weight: 700;
+line-height: 20px;
+margin-left:25rem;
+margin-top: 2rem;
+}
+#loc{
+   height: 30px;
+    width: 30px;
+    margin-top: -30px;
+    margin-left: 20rem; 
+}
+#cont2{
+    display: flex;
+    width: 412px;
+    height: 45px;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 18px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    margin-left:25rem;
+    margin-top:-30px;
+}
+#mail{
+    display: flex;
+width: 322px;
+height: 45px;
+flex-direction: column;
+flex-shrink: 0;
+color: #FFF;
+font-size: 20px;
+font-family: Poppins;
+font-style: normal;
+font-weight: 700;
+line-height: 35px;
+margin-left:25rem;
+margin-top: 2rem;
+}
+#email{
+    height: 30px;
+    width: 30px;
+    margin-top: -30px;
+    margin-left: 20rem;
+}
+#cont3{
+    display: flex;
+    width: 412px;
+    height: 45px;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 18px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    margin-left:25rem;
+    margin-top: -20px;
+}

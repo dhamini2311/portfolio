@@ -1,14 +1,29 @@
-<style>
-    .body{
-    margin: 0;
-    height: 100vh;
-    width: 100%;
-    background-color: #222222;
-}
-</style>
-<body class="body" >
-    <app-header></app-header>
-    <div>
+<body class="body">
+    <app-header id="header"></app-header>
+    <div class="parent">
+        <div class="circle">
+            <img src="../../assets/pic1.jpg" alt="">
+        </div>
+        <div class="para">
+            <span id="p1">Full Stack Developer</span><br>
+            <span id="p2">Dhamini.V</span><br>
+            <span id="p3"><span id="small">Wanna create a website? You are in the right place😉.</span>
+                While creating websites, I provide a complete design solution from
+                concept to implementation. 
+                I ensure excellent technical functionality, and make sure everything runs smoothly.
+                If you are interested in my portfolio and would like to know more, please feel free to reach out
+                to me!</span> <br>
+            <div class="hbutton">
+                <!-- <button id="resume" href="../../assets/img/Resume.pdf" download=" Resume.pdf">Resume</button> -->
+                <a id="resume" href="../../assets/resume final 2.pdf" download="Resume.pdf">
+                    Resume
+                </a>
+                <button id="contact" >Contact</button>
+            </div>
+
+
+        </div>
 
     </div>
+    <!-- <app-footer class="foot"></app-footer> -->
 </body>

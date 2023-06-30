@@ -1,14 +1,60 @@
-<style>
-    .body {
-    height: 100vh;
-    width: 100%;
-    background-color: #222222;
-    }
-    </style>
-    <body class="body" >
-        <app-header></app-header>
-        <div>
-    
+<body class="body" >
+    <app-header></app-header>
+    <div class="main">
+        <div class="sub1">
+            <p id="frontskills"> Back-end Skills </p>
+            <p id="p1"> What do I do?</p>
+            <div class="skills">
+                <img id="pen" src="../../assets/image pen.png" alt="">
+                <span id="s1">PHP</span>
+                <span id="s1content">It is a well-known fact that when examining a graphic design, one is distracted by the surrounding text, if it makes any sense to it.
+                The task of Lorem Ipsum is then to replace the classic meaningful text with a suitable meaningless alternative</span>
+                <img id="comp" src="../../assets/image comp.png" alt="">
+                <span id="s2">Database</span>
+                <span id="s2content">HTML,CSS,Javascript are the most important languages to know for developing any website. 
+                    These languages are a buildiing block for the development of a scalable website.
+                </span>
+                <img id="house" src="../../assets/image house.png" alt="">
+                <span id="s3">C,C++,Python</span>
+                <span id="s3content">Having a decent knowledge on angular framework helps in creating reliable and scalable websites,
+                    this also helps in fast development of the website.
+                </span>
+            </div>
         </div>
-    </body>
-    
+        <div class="graph">
+            <p id="coding"> Coding Skills</p>
+            <div class="bar">
+                <div class="level" [style.width.%]="40"></div>
+            </div>
+                <p id="html">Python</p>
+                <span id="l1">100%</span>
+                <div id="level-bar1">
+                    <div id="lb1" [style.width.%]="100"></div>
+                </div>
+                <span id="css">MySQL</span>
+                <span id="l2">80%</span>
+                <div class="level-bar2">
+                    <div class="lb2" [style.width.%]="80">
+                    </div>
+            </div>
+                <span id="js">Java</span>
+                <span id="l3">70%</span>
+                <div class="level-bar3">
+                    <div class="lb3" [style.width.%]="70">
+                    </div>
+                </div>
+                <span id="angular">C++</span>
+                <span id="l4">70%</span>
+                <div class="level-bar4">
+                    <div class="lb4" [style.width.%]="70">
+                    </div>
+                </div>
+                <span id="Django">Django</span>
+                <span id="l5">60%</span>
+                <div class="level-bar5">
+                    <div class="lb5" [style.width.%]="60">
+                    </div>
+                </div>
+        </div>
+    </div>
+</body>
